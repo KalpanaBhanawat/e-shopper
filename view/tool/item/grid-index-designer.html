@@ -1,0 +1,110 @@
+<div id="{$_name}" style="{$style}" class="{$class}">
+  {item_count_wrapper}
+  <div class="item-count-container">
+    <div class="category-name">
+      <p>{$category_name}</p>
+    </div>
+    <div class="item-count text-right">
+      <p>{$item_count}</p>
+    </div>
+  </div>
+  {/}
+  {rows}{row}
+  {$micro_data}
+
+  <div data-xsnb-item-id="{$id}" class="product-image-wrapper xepan-commerce-item product-image-wrapper col-md-4">
+      <div class="single-products">
+        <div class="productinfo text-center">
+        
+           {image_wrapper}
+          <div class="list-group-item xepan-commerce-image-wrapper"><a href="{$item_detail_page_url_via_image}" class="xepan-commerce-image-anchor"><img src="{first_image}abc{/}" class="xepan-commerce-item-img"/></a>
+          </div>
+          {/image_wrapper}
+          </div>
+          <div class="product-overlay">
+            <div class="overlay-content">
+               {sale_price_wrapper}
+          <h2 class="xepan-commerce-tool-item-sale-price list-group-item">
+          {$sale_price}
+          </h2>
+          {/}
+          {original_price_wrapper}
+          <h2 class="xepan-commerce-tool-item-original-price list-group-item">{$original_price}
+          </h2>
+          {/}
+             {name_wrapper}
+          <p class="list-group-item xepan-commerce-item-name-wrapper"><a href="{item_detail_page_url_via_name}{/}" class="xepan-commerce-item-name">
+          {$name}</a>
+          </p>
+          {/}
+          {addtocart_wrapper}
+          <div data-xsnbitemid="{$id}" data-name="{$name}" class="xepan-commerce-item-addtocart">{$Addtocart}</div>
+          {/}
+          {personalizedbtn_wrapper}
+          <div data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper">{$personalizedbtn}</div>
+          {/}
+           <!--  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="choose">
+        <ul class="nav nav-pills nav-justified">
+          <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+          <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+        </ul>
+      </div>
+</div>
+
+ <!--  <div  class="">
+    <div class="single-products">
+      <div class="productinfo text-center">
+        {image_wrapper}
+        <div class="list-group-item xepan-commerce-image-wrapper"><a href="{$item_detail_page_url_via_image}" class="xepan-commerce-image-anchor"><img src="{first_image}abc{/}" class="xepan-commerce-item-img"/></a>
+        </div>
+        {/image_wrapper}
+        {sale_price_wrapper}
+        <h2 class="xepan-commerce-tool-item-sale-price list-group-item">
+        {$sale_price}
+        </h2>
+        {/}
+        {original_price_wrapper}
+        <h2 class="xepan-commerce-tool-item-original-price list-group-item">{$original_price}
+        </h2>
+        {/}
+        {name_wrapper}
+        <p class="list-group-item xepan-commerce-item-name-wrapper"><a href="{item_detail_page_url_via_name}{/}" class="xepan-commerce-item-name">
+        {$name}</a>
+        </p>
+        {/}
+        {shipping_charge_wrapper}
+        <h2 class="xepan-commerce-tool-item-shipping-charge list-group-item">{$shipping_charge}</h2>
+        {/}
+        {description_wrapper}
+        <h2 onclick="javascript:void(0)" class="xepan-commerce-item-short-description list-group-item">{$description}</h2>
+        {/}
+        {specification_wrapper}
+        <h2 class="xepan-commerce-tool-item-specification list-group-item">
+          {specification}
+          {rows}{row}
+          <div class="row">
+            <div class="col-md-6">{$name}</div>
+            <div class="col-md-6">{$value}</div>
+          </div>{/}{/}
+          {/specification}
+        </h2>
+        {/}
+        {personalizedbtn_wrapper}
+        <div data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper">{$personalizedbtn}</div>
+        {/}
+        {addtocart_wrapper}
+        <div data-xsnbitemid="{$id}" data-name="{$name}" class="xepan-commerce-item-addtocart">{$Addtocart}</div>
+        {/}
+      </div>
+    </div> -->
+  {/}{/}
+  </div>
+  {not_found}
+  <div role="alert" class="full-width alert alert-warning"><strong class="glyphicon glyphicon-warning-sign">&nbsp;Warning!<span>&nbsp;{$not_found_message}</span></strong></div>{/}
+  {paginator_wrapper}
+  <div style="float:none; clear:both" class="xepan-commerce-item-paginator">{$Paginator}</div>{/}
+</div>

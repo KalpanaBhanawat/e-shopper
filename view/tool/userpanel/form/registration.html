@@ -1,0 +1,40 @@
+<div id="{$_name}">
+<h2>New User Signup!</h2>
+  <form role="form" action="#" method="POST">
+      <fieldset>
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="form-group atk-form-row atk-form-field">
+              <div class="xepan-form-field">{$first_name}    </div>
+            </div>
+            <div class="form-group atk-form-row atk-form-field">
+                <div class="xepan-form-field">{$last_name}    </div>
+            </div>
+            <div class="form-group atk-form-row atk-form-field">
+                <div class="xepan-form-field">{$username}</div>
+              </div>
+            <div class="form-group atk-form-row atk-form-field">
+                <div class="xepan-form-field">{$password}</div>
+            </div>
+            <div class="form-group atk-form-row atk-form-field">
+                <div class="xepan-form-field">{$retype_password}   </div>
+            </div>
+          </div>
+        </div>
+        <div style="padding-bottom:20px;" class="ro">            </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="submit" class="btn btn-default">Register</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div class="panel-footer text-center">{login_wrapper}<a style="cursor:pointer; cursor: hand;" href="index.php" data-showview="login_view" class="back-login xepan-login-panl-loadview"> Back To Login 
+      <div id="login-box-footer"></div></a>{/}</div>
+</div>
+<style>
+   input{
+    width:100%;
+  }      
+</style>
