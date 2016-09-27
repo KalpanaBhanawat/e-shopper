@@ -1,0 +1,154 @@
+<div id="{$_name}" class="xepan-commerce-tool-cart xepan-grid main-box clearfix atk-table atk-table-zebra atk-table-bordered {$class}">
+  {$Content}
+  {Pannel}
+  {$grid_buttons} 
+  {/Pannel}
+  {lister}
+  {$total_count}
+  <div class="table-responsive cart_info">
+    <table class="table table-condensed">{header}
+      <thead>{cols}{col}
+        <tr class="cart_menu" style='background:#FE980F;height:50px;color:white;font-size:13pt;'>
+          <td class="image">Item</td>
+          <td class="description"></td>
+          <td class="price">Price</td>
+          <td class="quantity">Quantity</td>
+          <td class="total">Total</td>
+          <td></td>
+        </tr>{/}{/}
+      </thead>{/}
+      {$subheader}
+      <tbody>{rows}{row}
+        <tr>
+          <td>{canvas_wrapper}
+            <div data-width="{$width}" data-height="{$height}" data-trim="{$trim}" data-unit="{$unit}" data-design="{$design}" data-selected_layouts_for_print="{$selected_layouts_for_print}" data-item_id="{$item_id}" data-item_member_design_id="{$item_member_design_id}" data-item_name="{$item_name}" data-base_url="{$base_url}" data-calendar_starting_month="{$calendar_starting_month}" data-calendar_starting_year="{$calendar_starting_year}" data-calendar_event="{$calendar_event}" class="image-block">
+              <div id="canvas-cart-{$uniq_id}" style="width:100px;" class="customer-designer-image"></div>
+            </div>{/canvas_wrapper}
+            {image_wrapper}<img alt="{image}{/}" src="{$image_url}" onerror="this.src='vendor/xepan/commerce/templates/view/tool/cart/images/not-found.png'"/>{/image_wrapper}
+          </td>
+        
+          <td class="cart_description">
+            <h4>
+            {$name}
+            </h4>
+            <p class="text-muted">Code :
+            {$item_code}
+            </p>
+            {design_edit_wrapper}
+            {design_edit}
+            <a href="{$design_edit_url}"><small>Edit Design</small></a>
+            {/}{/}
+            <small>
+            {custom_fields_wrapper}
+            </small>
+            <small>
+            {custom_field}
+            </small>
+            <div><small> 
+            {$id}: {$name}
+            </small></div>
+            {/}{/}
+          </td>
+          <td class="cart_price">
+            <p>
+            {unit_price}
+            {/}
+            </p>
+            <div>
+            {$shipping_charge_amount}<br/>
+            </div>
+            {$shipping_duration_text}
+          </td>
+          <td class="cart_quantity">
+            {qty_wrapper}
+                {qty_form}
+                {$qty}
+                {/}{/}
+          </td>
+          <td>
+          {$amount_including_tax}
+          </td>
+          <td class="cart_total">
+            <p class="xepan-commerce-tool-total cart_total_price">{$total_amount}</p>
+          </td>
+          <td class="cart_delete">
+            {cart_item_remove_button_wrapper}
+            <td>
+              <button data-cartid="{$id}" class="round-button-circle pull-right xepan-commerce-cart-item-delete">x</button>
+            </td>
+            {/}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>{/lister}
+    {not_found}
+    <div class="xepan-cart-empty">{$not_found_message}</div>{/}
+    {footer}
+    <div style="margin-top:35px;" class="col-lg-3 col-md-3 col-sm-3">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>
+              <div class="xepan-commerce-tool-total-name">Total Amount</div>
+            </td>
+            <td class="text-right">
+              <div class="xepan-commerce-tool-total">{$total_amount}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="xepan-commerce-tool-total-name">Shipping Amount</div>
+            </td>
+            <td class="text-right">
+              <div class="xepan-commerce-tool-total">{$total_shipping_amount}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="xepan-commerce-tool-total-name">Gross Amount</div>
+            </td>
+            <td class="text-right">
+              <div class="xepan-commerce-tool-total">{$gross_amount}</div>
+            </td>
+          </tr>{discount_voucher_wrapper}
+          <tr>
+            <td>
+              <div class="xepan-commerce-tool-total-name">Apply Coupon</div>
+            </td>
+            <td class="text-right">
+              <div class="xepan-commerce-tool-total">{$discount_voucher}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="xepan-commerce-tool-total-name">Discount Amount</div>
+            </td>
+            <td class="text-right">
+              <div class="xepan-commerce-tool-total">{$discount_amount}</div>
+            </td>
+          </tr>{/}
+          {express_shipping_wrapper}
+          <tr>
+            <td>
+              <div class="xepan-commerce-tool-total-name xepan-cart-express-shipping">Express Shipping</div>
+            </td>
+            <td class="text-right">
+              <div class="xepan-commerce-tool-total xepan-cart-express-shipping-checkout">{$express_shipping_checkbox}</div>
+            </td>
+          </tr>{/}
+          <tr>
+            <td>
+              <div class="xepan-commerce-tool-total-name">Net Amount</div>
+            </td>
+            <td class="text-right">
+              <div class="xepan-commerce-tool-total">{$net_amount}</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>{proceed_to_next_button_wrapper}
+      <div class="btn btn-block btn-primary xepan-cart-proceed-to-next-btn">Proceed to Next </div>{/}
+    </div>{/footer}
+  </div>
+</div>

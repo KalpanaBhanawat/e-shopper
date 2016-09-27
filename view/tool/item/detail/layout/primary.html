@@ -1,0 +1,56 @@
+<div id="{$_name}" class="{$class} product-information"><!--/product-information-->
+  {$Content}
+  {xepan_commerce_itemdetail_wrapper}
+  {name_wrapper}
+  <h2 class="xepan-commerce-itemdetail-name">{$name}</h2>
+  {/}
+  <span>
+    {sale_price_wrapper}
+    <span class="xepan-commerce-tool-item-sale-price">{$sale_price}</span>
+    {/}
+    {original_price_wrapper}
+    <span class="xepan-commerce-tool-item-original-price">{$original_price}</span>
+    {/}
+    {shipping_charge_wrapper}
+    <span class="xepan-commerce-tool-item-shipping-charge">{$shipping_charge}</span>
+    {/}
+    {personalizedbtn_wrapper}
+    <div data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper btn-fefault cart">{$personalizedbtn}</div>
+    {/}
+    {addtocart_wrapper}
+    <div data-xsnbitemid="{$id}" data-name="{$name}" class="xshop-item-custom-field-name xshop-item-addtocart btn-fefault">{$Addtocart}</div>
+    {/}
+  </span>
+  <p>      
+  <div class="tabs-wrapper profile-tabs">
+    <ul class="nav nav-tabs">{description_wrapper}
+      <li class="active"><a data-toggle="tab" href="#tab-description">Description</a></li>{/}
+      {specification_wrapper}
+      <li><a data-toggle="tab" href="#tab-specification">Specification  </a></li>{/}
+      {item_upload_wrapper}
+      <li><a data-toggle="tab" href="#tab-itemupload">Item Upload  </a></li>{/}
+    </ul>
+    <div class="tab-content">
+      <div id="tab-description" class="tab-pane fade in active">
+        <div class="panel panel-default">
+          <div class="panel-heading">Product Summary</div>
+          <div class="panel-body">{$item_description}</div>
+        </div>
+      </div>
+      <div id="tab-specification" class="tab-pane clearfix fade">
+        <div class="panel panel-default">
+          <div class="panel-heading">Specification</div>
+          <div class="panel-body">{$specification}</div>
+        </div>
+      </div>
+      <div id="tab-itemupload" class="tab-pane clearfix fade">
+        <div class="panel panel-default">
+          <div class="panel-heading">Upload Your Design</div>
+          <div class="panel-body">{$item_upload}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </p>
+  {/}
+</div>
