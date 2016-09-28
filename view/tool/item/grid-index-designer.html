@@ -20,31 +20,34 @@
           <div class="list-group-item xepan-commerce-image-wrapper"><a href="{$item_detail_page_url_via_image}" class="xepan-commerce-image-anchor"><img src="{first_image}abc{/}" class="xepan-commerce-item-img"/></a>
           </div>
           {/image_wrapper}
-          </div>
-          <div class="product-overlay">
-            <div class="overlay-content">
-               {sale_price_wrapper}
-          <h2 class="xepan-commerce-tool-item-sale-price list-group-item">
-          {$sale_price}
-          </h2>
-          {/}
-          {original_price_wrapper}
-          <h2 class="xepan-commerce-tool-item-original-price list-group-item">{$original_price}
-          </h2>
-          {/}
-             {name_wrapper}
-          <p class="list-group-item xepan-commerce-item-name-wrapper"><a href="{item_detail_page_url_via_name}{/}" class="xepan-commerce-item-name">
-          {$name}</a>
-          </p>
-          {/}
-          {addtocart_wrapper}
-          <div data-xsnbitemid="{$id}" data-name="{$name}" class="xepan-commerce-item-addtocart">{$Addtocart}</div>
-          {/}
-          {personalizedbtn_wrapper}
-          <div data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper">{$personalizedbtn}</div>
-          {/}
-           <!--  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a> -->
-          </div>
+
+          <h2>$56</h2>
+          <p>Easy Polo Black Edition</p>
+          <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+        </div>
+        <div class="product-overlay">
+          <div class="overlay-content">
+             {sale_price_wrapper}
+        <h2 class="xepan-commerce-tool-item-sale-price list-group-item">
+        {$sale_price}
+        </h2>
+        {/}
+        {original_price_wrapper}
+        <h2 class="xepan-commerce-tool-item-original-price list-group-item">{$original_price}
+        </h2>
+        {/}
+           {name_wrapper}
+        <p class="list-group-item xepan-commerce-item-name-wrapper"><a href="{item_detail_page_url_via_name}{/}" class="xepan-commerce-item-name">
+        {$name}</a>
+        </p>
+        {/}
+        {personalizedbtn_wrapper}
+        <div data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper">{$personalizedbtn}</div>
+        {/}
+        {addtocart_wrapper}
+        <div data-xsnbitemid="{$id}" data-name="{$name}" class="xepan-commerce-item-addtocart">{$Addtocart}</div>
+        {/}
+        </div>
         </div>
       </div>
       <div class="choose">
@@ -102,7 +105,6 @@
       </div>
     </div> -->
   {/}{/}
-  </div>
   {not_found}
   <div role="alert" class="full-width alert alert-warning"><strong class="glyphicon glyphicon-warning-sign">&nbsp;Warning!<span>&nbsp;{$not_found_message}</span></strong></div>{/}
   {paginator_wrapper}

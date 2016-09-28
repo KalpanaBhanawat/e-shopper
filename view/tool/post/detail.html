@@ -1,0 +1,32 @@
+<div id="{$_name}" class="col-sm-9 blog">
+<div class="blog-post-area">
+<h2 class="title text-center">Latest From our Blog</h2>
+<div class="single-blog-post">
+  <h3>
+  {$title}
+  </h3>
+  <hr/>
+  <div class="post-meta">
+    <ul>
+      <li><i class="fa fa-user"></i>{$created_by}</li>
+       <li><i class="fa fa-calendar"></i>{$created_at_date}</li>
+    </ul>
+  </div>
+  <div>
+  {image_wrapper}
+  <img src="{$image}" style="height:auto; width='100%' max-width:100%" alt="" class="img-responsive img-blog"/>
+  {/}
+  </div>
+  <div>
+    <div id="xepan-blog-description" xepan-component="xepan/cms/Tool_Text" emptytext="No Content found" class="xepan-component xepan-editable-text xepan-blog-description">{$post_description}
+    </div>
+    {tag_wrapper}
+    <div class="post-tags"><strong>Tags : </strong><a href="#">{$tag}</a></div>{/} 
+    {$editing_mode}
+  </div>{$comments}    
+</div>{$Content}
+
+</div>
+</div><!--/blog-post-area-->
+
+</div>
