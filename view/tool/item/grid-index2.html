@@ -12,7 +12,7 @@
   {rows}{row}
   {$micro_data}
 
-  <div data-xsnb-item-id="{$id}" class="product-image-wrapper xepan-commerce-item product-image-wrapper col-md-4">
+  <div data-xsnb-item-id="{$id}" class="product-image-wrapper xepan-commerce-item product-image-wrapper col-md-3">
       <div class="single-products">
         <div class="productinfo text-center">
         
@@ -20,7 +20,10 @@
           <div class="list-group-item xepan-commerce-image-wrapper"><a href="{$item_detail_page_url_via_image}" class="xepan-commerce-image-anchor"><img src="{first_image}abc{/}" class="xepan-commerce-item-img"/></a>
           </div>
           {/image_wrapper}
-          
+
+          <h2>$56</h2>
+          <p>Easy Polo Black Edition</p>
+          <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
         </div>
         <div class="product-overlay">
           <div class="overlay-content">
@@ -38,16 +41,19 @@
         {$name}</a>
         </p>
         {/}
-        {personalizedbtn_wrapper}
-        <div data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper">{$personalizedbtn}</div>
-        {/}
-        {addtocart_wrapper}
-        <div data-xsnbitemid="{$id}" data-name="{$name}" class="xepan-commerce-item-addtocart">{$Addtocart}</div>
-        {/}
-        </div>
+          {addtocart_wrapper}
+          <div data-xsnbitemid="{$id}" data-name="{$name}" class="xepan-commerce-item-addtocart">{$Addtocart}</div>
+          {/}
+           <!--  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a> -->
+          </div>
         </div>
       </div>
-     
+      <div class="choose">
+        <ul class="nav nav-pills nav-justified">
+          <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+          <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+        </ul>
+      </div>
 </div>
 
  <!--  <div  class="">
