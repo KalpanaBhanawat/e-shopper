@@ -262,10 +262,10 @@ a#scrollUp i{
   height: 35px;
   outline: medium none;
   padding-left: 10px;
-  width: 170px;
+  width: 150px;
   background-image: url(../images/home/searchicon.png);
   background-repeat: no-repeat;
-  background-position: 160px;
+  background-position: 140px;
 }
 
 
@@ -1475,7 +1475,7 @@ h2.title {
 }
 
 .login-form form button {
-  margin-top: 23px;
+  margin-top: 0px;
 }
 
 .login-form form button, .signup-form form button {
@@ -2394,7 +2394,7 @@ h2.title {
   background:#FE980F;
   border: 0 none;
   border-radius: 0;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .blank-arrow {
